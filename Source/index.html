@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#000">
+
+  <title>Mark-Down Editor Example - Abhay557</title>
+  <link rel="icon" type="image/png" href="/img/favicon.jpg">
+  <!-- Fonts and icons -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?familyRoboto+Mono">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="https://unpkg.com/material-components-web@0.36.0/dist/material-components-web.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/github-markdown-css/2.10.0/github-markdown.min.css">
+  <link rel="stylesheet" href="css/base.css">
+</head>
+
+<body class="mdc-typography">
+  <header class="mdc-toolbar mdc-toolbar--fixed">
+    <div class="mdc-toolbar__row">
+      <section class="mdc-toolbar__section mdc-toolbar__section--align-start">
+        <span class="mdc-toolbar__title">Mark-Down Editor Example - Abhay557</span>
+      </section>
+      <section class="mdc-toolbar__section mdc-toolbar__section--align-end" role="toolbar">
+        <span id="toolbar-menu-toggle" class="material-icons mdc-toolbar__icon" aria-label="Menu" alt="Menu">more_vert</span>
+        <div id="toolbar-menu" class="mdc-menu" tabindex="-1" data-mdc-auto-init="MDCMenu">
+          <ul class="mdc-menu__items mdc-list" role="menu" aria-hidden="true">
+            <li class="mdc-list-item" role="menuitem" tabindex="0">
+              <a href="https://github.com/Abhay557/Mark-Editor">Project On GitHub</a>
+            </li>
+          </ul>
+        </div>
+      </section>
+    </div>
+  </header>
+
+  <main>
+    <div class="flex-container mdc-toolbar-fixed-adjust">
+      <div id="markdown" class="flex-item" contenteditable></div>
+      <div id="preview" class="flex-item markdown-body"></div>
+    </div>
+
+    <button id="toggle-fab" class="mdc-fab material-icons no-select">
+      <span class="mdc-fab__icon">text_format</span>
+    </button>
+  </main>
+
+  <script src="https://unpkg.com/material-components-web@0.36.0/dist/material-components-web.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/marked/0.5.0/marked.min.js"></script>
+  <script src="js/main.js"></script>
+</body>
+
+</html>
